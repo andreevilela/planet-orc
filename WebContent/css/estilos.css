@@ -1,0 +1,482 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/09/2018, 01:42:37
+    Author     : Andre
+*/
+
+@font-face {
+    font-family: "QUADRADA";
+    src: url("QUADRADA.otf") format("truetype");
+}
+
+* {
+    font-family: "QUADRADA";
+    outline: none;
+}
+
+body {
+    
+}
+
+.fundo{
+  background: url(../img/fundo.png) no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.fundo2{
+  background: url(../img/fundo2.png) no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 40px;
+    /* background: linear-gradient(to bottom, #336600 0%, #333300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+h2{
+    color: white;
+    margin-top: 40px;
+    text-shadow: 2px 2px 2px black;
+}
+
+p{
+    color: white;
+    padding: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.left{
+    text-align: left;
+    margin-left: 60px;
+}
+
+.right{
+    text-align: right;
+    margin-right: 60px;
+}
+
+.center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color{
+    color: white;
+}
+
+.img80{
+    width: 80px;
+}
+
+.img60{
+    width: 60px;
+}
+
+.img700{
+    width: 720px;
+}
+
+.index{
+    z-index: -1; 
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spaceboots {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+div{
+    
+}
+
+label{
+    color: white;
+    display: block;
+}
+
+label.input {
+    margin-top: 40px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    display: inline-block;
+    width: 160px;
+    text-align: right;
+}
+
+.formulario {
+    margin: auto;
+    width: 700px;
+    height: 800px;
+    padding: 25px;
+    /*border: solid 1px;*/
+}
+
+.caixa100 {
+    padding: 25px;
+    /*border: solid 1px;*/
+}
+
+input[type="text"], input[type="password"]{
+    width: 60%;
+    height: 45px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    padding:10px;
+    box-shadow: 1px 1px 50px 5px gray;
+    transition: all 0.5s;
+    background: url(../img/face.png) 1000px center no-repeat;
+    background-color: rgba(255,255,255,0.6);
+    background-size: 70px 70px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    box-shadow: 1px 1px 5px 5px black;
+    background-position: right center;
+}
+
+input[type="checkbox"]{
+    margin-top: 30px;
+    margin-left: 200px;
+    transform: scale(1.5);
+}
+
+input[type="radio"]{
+    margin-top: 60px;
+    margin-left: 270px;
+    transform: scale(1.5);
+}
+
+.validacao{
+    font-size: 13px;
+    color: red;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 175px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.cadastrar {
+    display: block;
+    margin-top: 25px;
+    /*margin-left: 200px;*/
+    text-align: center;
+    text-decoration: none;
+}
+
+.cadastrar:link {
+ text-decoration: none;
+}
+
+.cadastrar:hover {
+ text-decoration: underline;
+}
+
+.entrar {
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    background: linear-gradient(to bottom, #336600 0%, #333300 100%);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgb(57,12,15);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgb(57,12,15);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.salvar {
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    background: linear-gradient(to bottom, #ff0066 0%, #ff6600 100%);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgb(57,12,15);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgb(57,12,15);
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 100px;
+}
+
+.escolher {
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    background: linear-gradient(to bottom, #ff3300 0%, #993300 100%);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgb(57,12,15);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgb(57,12,15);
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 100px;
+}
+
+.entrar:hover{
+   background: linear-gradient(to bottom, #333300 0%, #336600 100%);
+}
+
+.salvar:hover{
+   background: linear-gradient(to bottom, #ff6600 0%, #ff0066 100%);
+}
+
+.escolher:hover{
+   background: linear-gradient(to bottom, #993300 0%, #ff3300 100%);
+}
+
+input[type="submit"]:active{
+    transform: scale(0.9);
+}
+
+.link{
+    display: block;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.link:link {
+ text-decoration: none;
+}
+
+.link:hover {
+ text-decoration: underline;
+}
+
+#footer {
+    background-color: #333;
+    color:black;
+    clear:both;
+    text-align:center;
+    padding:15px;	
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;	 
+}
+
+.xx{
+    display: block; 
+    float: left; 
+    width: 50%;
+    border: solid 1px;
+    z-index: 2;
+}
+
+.yy{
+    display: block; 
+    float: right; 
+    width: 50%;
+    border: solid 1px;
+    z-index: 2;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.fontgg {
+    margin-top: 15px;
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.fontm {
+    font-size: 20px;
+}
+
+.active{
+    background-color: #111;
+}
+
+.ranking {
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    padding: 25px;
+    /*border: solid 1px;*/
+}
+
+.rankingImg {
+    width: 100px;
+}
+
+.ranking2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 30px;    
+}
+
+table {
+    margin: auto;
+    margin-top: 10px;
+}
+
+td {
+    /*border: 1px solid #dddddd;*/
+    text-align: center;
+}
+
+th {
+    /*border: 1px solid #dddddd;*/
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    padding: 15px;
+}
+
+.botao{
+    color: rgba(255,255,255,0.0);
+    width: 80px;
+    height: 80px;
+    background-color: white;
+}
+
+.botao:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+    transform: scale(0.9);
+}
+
+.vermelho{
+    color: red;
+}
+
+.tabuleiro{
+    margin: auto;
+    width: 700px;
+}
+
+.aguarde{
+    position:absolute;
+    z-index: 2;
+}
+
+.a{
+  color: #005ce6;
+}
+
+.a:link {
+ text-decoration: none;
+}
+
+.a:hover {
+ text-decoration: underline;
+}
+
+.pontuacao{
+    border: 1px solid #dddddd;
+}
+
+.vitoria{
+    position:absolute; 
+    left:1px; 
+    top:1px; 
+    z-index: 2; 
+    width:100%;
+}
+
+.gameOver{
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    margin: auto;
+    margin-top: 220px;;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 10%;
+    opacity: 0.8;
+}
+
+.fim{
+    position: absolute;
+    z-index: 3;
+    left: 40%;
+    width: 20%;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    background: linear-gradient(to bottom, #009900 0%, #cc0066 100%);;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgb(57,12,15);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgb(57,12,15);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.fim:hover{
+    background: linear-gradient(to bottom, #cc0066 0%, #009900 100%);
+}

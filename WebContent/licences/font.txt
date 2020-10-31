@@ -1,0 +1,9 @@
+Nome da Fonte ----- Quadrada
+Estilo da Fonte --- Fonte Quadrada
+Família ----------- Quadrada
+Sub-Família ------- Medium
+Versão ------------ 001.000
+Autor -------------
+Companhia ---------
+Site -------------- https://www.maisfontes.com/quadrada
+Copyright --------- 
